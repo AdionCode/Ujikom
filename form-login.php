@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Login Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,20 +12,20 @@
 <body>
     <div class="position-absolute top-50 start-50 translate-middle" style="width: 25em;">
         <h1 class="text-center fw-bold">LOGIN</h1>
-        <form action="proses-login.php" method="post">
+        <form action="proses-login.php" method="post" >
             <!-- Username  -->
             <div class="mb-3">
                 <label for="username-form" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username-form">
+                <input type="text" class="form-control" id="username-form" name="username-form" required>
             </div>
             <!-- Password -->
             <div class="mb-3">
                 <label for="password-form" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password-form">
+                <input type="password" class="form-control" id="password-form" name="password-form" required>
             </div>
             <!-- Register -->
             <div>
-                <label>Dont have account? <a href="form-register.php" style="text-decoration: none;">Create Now</a></label>
+                <label>don't have account yet? <a href="form-register.php" style="text-decoration: none;">Sign Up</a></label>
             </div>
             <br>
             <!-- Submit Button -->

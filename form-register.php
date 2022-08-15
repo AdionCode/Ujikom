@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Register Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,22 +16,17 @@
             <!-- Nama  -->
             <div class="mb-3">
                 <label for="nama-form" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="username-form">
+                <input type="text" class="form-control" id="username-form" required>
             </div>
             <!-- Username  -->
             <div class="mb-3">
                 <label for="username-form" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username-form">
+                <input type="text" class="form-control" id="username-form" required>
             </div>
             <!-- Password -->
             <div class="mb-3">
                 <label for="password-form" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password-form">
-            </div>
-            <!-- Retype Password -->
-            <div class="mb-3">
-                <label for="repassword-form" class="form-label">Retype Password</label>
-                <input type="repassword" class="form-control" id="repassword-form">
+                <input type="password" class="form-control" id="password-form" required>
             </div>
             <!-- Register -->
             <div>
