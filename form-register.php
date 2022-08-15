@@ -13,11 +13,11 @@
     <div class="position-absolute top-50 start-50 translate-middle" style="width: 25em;">
         <h1 class="text-center fw-bold">REGISTER</h1>
         <form action="proses-register.php" method="post">
-            <!-- Nama  -->
+            <!-- Nama 
             <div class="mb-3">
                 <label for="nama-form" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="nama-form" name="nama-form" required>
-            </div>
+            </div> -->
             <!-- Username  -->
             <div class="mb-3">
                 <label for="username-form" class="form-label">Username</label>

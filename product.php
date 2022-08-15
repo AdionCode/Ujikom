@@ -15,6 +15,7 @@
         header("location:form-login.php");
     }
     include("Navbar.php");
+    include("harga.php");
     ?>
 
     <!--  -->
@@ -25,7 +26,7 @@
                     <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Asus</h5>
-                        <p class="card-text">Great Overall.</p>
+                        <p class="card-text"><?php echo "Rp. ". $hargaasus ?></p>
                         <a href="proses-product.php?laptop=1" class="btn btn-primary">Buy</a>
                     </div>
                 </div>
@@ -35,7 +36,7 @@
                     <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Acer</h5>
-                        <p class="card-text">Great durability.</p>
+                        <p class="card-text"><?php echo "Rp. ". $hargaacer ?></p>
                         <a href="proses-product.php?laptop=2" class="btn btn-primary">Buy</a>
                     </div>
                 </div>
@@ -45,7 +46,7 @@
                     <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop HP</h5>
-                        <p class="card-text">Great panel.</p>
+                        <p class="card-text"><?php echo "Rp. ". $hargahp ?></p>
                         <a href="proses-product.php?laptop=3" class="btn btn-primary">Buy</a>
                     </div>
                 </div>
@@ -55,7 +56,7 @@
                     <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Lenovo</h5>
-                        <p class="card-text">Great Price.</p>
+                        <p class="card-text">Rp. 9.000.000,00.</p>
                         <button type="button" class="btn btn-danger" disabled>Sold Out</button>
                     </div>
                 </div>
@@ -65,7 +66,7 @@
                     <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Zyrex</h5>
-                        <p class="card-text">Great Price.</p>
+                        <p class="card-text">Rp. 9.000.000,00</p>
                         <button type="button" class="btn btn-danger" disabled>Sold Out</button>
                     </div>
                 </div>

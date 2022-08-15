@@ -20,8 +20,20 @@
     $query = mysqli_query($koneksi, $sql);
     $laptop = mysqli_fetch_assoc($query);
 
-    ?>
 
+
+    $nama = $_POST['nama'];
+    $alamat = $_POST['alamat'];
+    $notelp = $_POST['notelp'];
+    ?>
+    <div>
+        <div style="margin-left: 25px;">
+            <h5>Data Buyer</h5>
+            <p>Nama : <?php echo $nama ?></p>
+            <p>alamat : <?php echo $alamat ?></p>
+            <p>No Telepon : <?php echo $notelp ?></p>
+        </div>
+    </div>
     <!--  -->
     <table class="table">
         <thead>
@@ -29,39 +41,42 @@
                 <th scope="col">#</th>
                 <th scope="col">Laptop</th>
                 <th scope="col">Total</th>
-                <th scope="col">Action</th>
+                <th scope="col">Total Harga</th>
             </tr>
         </thead>
         <tbody class="table-group-divider">
+            <?php
+            include("harga.php");
+            ?>
             <tr>
                 <th scope="row">1</th>
                 <td>Asus</td>
-                <td><?php echo $laptop['asus']; ?></td>
-                <td><?php echo "<a class='btn btn-primary' role='button' href='delete.php?laptop=1'>Hapus</a>" ?></td>
+                <td><?php echo $laptop['asus'] . "* Rp." . $hargaasus; ?></td>
+                <td><?php echo "Rp. " . $laptop['asus'] * $hargaasus ?></td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Acer</td>
-                <td><?php echo $laptop['acer']; ?></td>
-                <td><?php echo "<a class='btn btn-primary' role='button' href='delete.php?laptop=2'>Hapus</a>" ?></td>
+                <td><?php echo $laptop['acer'] . "* Rp." . $hargaacer; ?></td>
+                <td><?php echo "Rp. " . $laptop['acer'] * $hargaacer ?></td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>HP</td>
-                <td><?php echo $laptop['hp']; ?></td>
-                <td><?php echo "<a class='btn btn-primary' role='button' href='delete.php?laptop=3'>Hapus</a>" ?></td>
+                <td><?php echo $laptop['hp'] . "* Rp." . $hargahp; ?></td>
+                <td><?php echo "Rp. " . $laptop['hp'] * $hargahp ?></td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Lenovo</td>
                 <td>- Sold Out -</td>
-                <td></td>
+                <td>Rp. 0</td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Zyrex</td>
                 <td>- Sold Out -</td>
-                <td></td>
+                <td>Rp. 0</td>
             </tr>
         </tbody>
     </table>
