@@ -12,21 +12,21 @@
 <body>
     <div class="position-absolute top-50 start-50 translate-middle" style="width: 25em;">
         <h1 class="text-center fw-bold">REGISTER</h1>
-        <form action="proses-login.php" method="post">
+        <form action="proses-register.php" method="post">
             <!-- Nama  -->
             <div class="mb-3">
                 <label for="nama-form" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="username-form" required>
+                <input type="text" class="form-control" id="nama-form" name="nama-form" required>
             </div>
             <!-- Username  -->
             <div class="mb-3">
                 <label for="username-form" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username-form" required>
+                <input type="text" class="form-control" id="username-form" name="username-form" required>
             </div>
             <!-- Password -->
             <div class="mb-3">
                 <label for="password-form" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password-form" required>
+                <input type="password" class="form-control" id="password-form" name="password-form" required>
             </div>
             <!-- Register -->
             <div>
@@ -34,6 +34,14 @@
             </div>
             <br>
             <!-- Submit Button -->
+            <?php
+            if (isset($_GET['error'])) {
+                $error = $_GET['error'];
+                if ($_GET['error'] == 1) {
+                    echo "<p>Username has already taken</p>";
+                }
+            }
+            ?>
             <div class="text-center">
                 <button type="submit" id="submit" value="Login" class="btn btn-primary" style="width: 8em;">Submit</button>
             </div>

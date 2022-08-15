@@ -12,14 +12,6 @@ if (mysqli_num_rows($query) > 0) {
     session_start();
     $_SESSION['login'] = TRUE;
     $_SESSION['username'] = $data['username'];
-    $_SESSION['nama'] = $data['nama'];
-
-    $remember = $_POST['remember'];
-
-    if ($remember != '') {
-        $kodeacak = hash('sha256', $username);
-        setcookie('login', $kodeacak, time() + 3600);
-    }
 
     header("location:index.php");
 } else {
