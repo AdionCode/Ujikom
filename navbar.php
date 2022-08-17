@@ -11,6 +11,9 @@
                         <a class="nav-link active" aria-current="page" href="/Ujikom/index.php">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/Ujikom/index.php#payment">Payment</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/Ujikom/product.php">Product</a>
                     </li>
                     <li class="nav-item">

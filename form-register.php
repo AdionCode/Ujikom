@@ -38,7 +38,7 @@
             if (isset($_GET['error'])) {
                 $error = $_GET['error'];
                 if ($_GET['error'] == 1) {
-                    echo "<p>Username has already taken</p>";
+                    echo "<p>Username has already taken!</p>";
                 }
             }
             ?>

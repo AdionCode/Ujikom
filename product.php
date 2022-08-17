@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Product</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
@@ -33,7 +33,7 @@
             </div>
             <div class="col">
                 <div class="card text-center">
-                    <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
+                    <img src="/Ujikom/Image/laptop2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Acer</h5>
                         <p class="card-text"><?php echo "Rp. ". $hargaacer ?></p>
@@ -43,7 +43,7 @@
             </div>
             <div class="col">
                 <div class="card text-center">
-                    <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
+                    <img src="/Ujikom/Image/laptop3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop HP</h5>
                         <p class="card-text"><?php echo "Rp. ". $hargahp ?></p>
@@ -53,7 +53,7 @@
             </div>
             <div class="col">
                 <div class="card text-center">
-                    <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
+                    <img src="/Ujikom/Image/laptopsold.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Lenovo</h5>
                         <p class="card-text">Rp. 9.000.000,00.</p>
@@ -63,7 +63,7 @@
             </div>
             <div class="col">
                 <div class="card text-center">
-                    <img src="/Ujikom/Image/laptop.jpg" class="card-img-top" alt="...">
+                    <img src="/Ujikom/Image/laptopsold.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Laptop Zyrex</h5>
                         <p class="card-text">Rp. 9.000.000,00</p>
